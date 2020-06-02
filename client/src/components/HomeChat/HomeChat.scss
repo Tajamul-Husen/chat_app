@@ -1,0 +1,20 @@
+@import "../../sass/global";
+
+.home-chat-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  @include flexbox(column, center, center);
+  background-color: #fff;
+  overflow: hidden;
+  .home-chat-icon {
+    color: $color3;
+    font-size: 12rem;
+  }
+  .home-chat-title {
+    color: $color4;
+    font-size: 1.8rem;
+  }
+}
+
+

@@ -1,0 +1,52 @@
+@import "../../sass/global";
+
+.reply-container {
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+  border-top: 3px solid $color2;
+  position: relative;
+  .reply-form {
+    width: 100%;
+    @include flexbox(row, center, center);
+    &-input {
+      width: 100%;
+      padding: 0.5em 0;
+      border: none;
+      font-size: 1.1rem;
+      color: $color5;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: $color4;
+      }
+    }
+    .emoji-icon {
+      color: $color1;
+      font-size: 1.65rem;
+      margin: 0 0.7em;
+      cursor: pointer;
+    }
+    .btn-icon {
+      color: $color1;
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .reply-form {
+    &-input {
+      font-size: 1.2rem !important;
+    }
+    .emoji-icon {
+      margin: 0 0.6em !important;
+      font-size: 1.8rem !important;
+    }
+    .btn-icon {
+      font-size: 1.9rem !important;
+    }
+  }
+}

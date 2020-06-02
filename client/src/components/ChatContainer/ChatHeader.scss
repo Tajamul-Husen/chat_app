@@ -1,0 +1,49 @@
+@import "../../sass/global";
+
+.chat-header {
+  width: 100%;
+  background-color: #fff;
+  padding: 1em;
+  @include flexbox(row, flex-start, center);
+  border-bottom: 3px solid $color2;
+  &-icon {
+    width: 45px !important;
+    height: 45px !important;
+    margin-right: 1em;
+    &-letter {
+      width: 45px;
+      text-align: center;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+    }
+  }
+  &-toggle {
+    display: none !important;
+    margin-right: 0.5em;
+    color: $color4;
+    cursor: pointer;
+  }
+  &-content {
+    &-name {
+      color: $color5;
+      font-size: 1.2rem;
+    }
+    &-status {
+      font-size: 0.9rem;
+      color: $color4;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .chat-header {
+    &-toggle {
+      display: block !important;
+    }
+    &-content {
+      &-name {
+        font-size: 1.3rem !important;
+      }
+    }
+  }
+}

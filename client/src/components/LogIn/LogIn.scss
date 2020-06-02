@@ -1,0 +1,88 @@
+@import "../../sass/global";
+
+.login-wrapper {
+  width: 100%;
+  height: 100%;
+  @include flexbox(row, center, center);
+  .login-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    @include flexbox(column, space-between, center);
+    text-align: center;
+    background-color: #fff;
+    box-shadow: $shadow;
+    &-header {
+      width: 100%;
+      color: $color1;
+      padding: 1em;
+      &-icon {
+        font-size: 5.5rem;
+      }
+      &-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.15em;
+      }
+      &-content {
+        color: $color4;
+      }
+    }
+
+    &-form {
+      width: 100%;
+      @include flexbox(column, flex-start, center);
+      padding: 1em;
+      &-control {
+        width: 100%;
+        &-input {
+          width: 100%;
+          background-color: $color2;
+          color: $color5;
+          margin-bottom: 0.5em;
+          font-size: 1.1rem;
+          padding: 0.9em;
+          &::placeholder {
+            color: $color4;
+          }
+          &:focus {
+            border-color: $color1;
+          }
+          &:disabled {
+            background-color: $color2;
+            color: $color4;
+          }
+        }
+        &-btn {
+          width: 100%;
+          background-color: $color1;
+          color: #fff;
+          margin-bottom: 0.5em;
+          font-size: 1.1rem;
+          padding: 0.9em;
+          &:hover:not([disabled]) {
+            background-color: darken($color1, 12%);
+          }
+          &:disabled {
+            background-color: $color2;
+            color: $color4;
+          }
+        }
+        &-err {
+          color: red;
+          font-size: 0.9rem;
+          padding-bottom: 0.5em;
+        }
+      }
+    }
+  }
+  .chat-logo-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1em;
+    & > path {
+      fill: $color1 !important;
+    }
+  }
+}
+

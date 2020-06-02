@@ -1,0 +1,27 @@
+@import "../../sass/global";
+
+
+.find-users {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+  border-bottom: 2px solid $color2;
+  .get-users-status {
+    width: 100%;
+    border: none;
+    padding: 1em;
+    background-color:#fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: none;
+    overflow: hidden;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+@media screen and (max-width:$mobile){
+  .get-users-status{
+    font-size: 1rem !important;
+  }
+}

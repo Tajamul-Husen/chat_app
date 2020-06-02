@@ -1,0 +1,48 @@
+.input,
+.btn {
+  border: none;
+  padding: 1em;
+  font-size: 1rem;
+  outline: none;
+}
+.btn {
+  font-weight: 550;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $color1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connection-lost {
+  color: $color4;
+  text-align: center;
+  margin-top: 3em;
+  font-size: 1.5rem;
+}
+
+.loader {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $color1;
+  animation: loader infinite forwards 1s linear;
+}
+
+@keyframes loader {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../sass/global";
+
+.users-container {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $color2;
+  overflow: hidden;
+}

@@ -1,0 +1,29 @@
+@import "../../sass/global";
+
+.users-box-container {
+  width: 100%;
+  height: 100%;
+  @include flexbox(column, flex-start, none);
+  overflow-y: auto;
+  scrollbar-color: $color4;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color4;
+  }
+  .not-found{
+    color: $color4;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width:$mobile){
+  .not-found{
+    font-size: 1rem !important;
+  }
+}
